@@ -12,9 +12,31 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	
 	<style>
-		.xlarge-font {
-			font-size: 64px
-		  }
+		
+		.carousel-indicators button 
+		{
+			height: 10px !important;
+			width: 10px !important;
+			margin: 0 10px !important;
+			border-radius: 100%;
+			background-color: #5271ff !important;
+		}
+		.carousel-control-prev-icon 
+		{
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+		}		   
+		.carousel-control-next-icon 
+		{
+			 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+		}
+		.icon1
+		{
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+		}
+		.icon2
+		{
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+		}
 	</style>
   </head>
   <body>
@@ -22,7 +44,7 @@
   <!--Navbar -->
    <nav class="navbar navbar-expand-lg bg-gradient navbar-dark " style="background-color:#061830;">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img src="Images/logofinal.png" width="140" height="50" alt=""></a>
+			<a class="navbar-brand" href="#"><img src="Images/logofinal.png" width="140" height="50" alt="Codehub Sodepur logo"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -71,11 +93,11 @@
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="carousel-control-prev-icon icon1" aria-hidden="true" style=""></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="carousel-control-next-icon icon2" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
@@ -88,7 +110,7 @@
 	<div class="row pt-5">
 		<div class="col-12 ">
 			
-			<h1 class="text-center xlarge-font">Welcome to Codehub Sodepur</h1>
+			<h1 class="text-center">Welcome to Codehub Sodepur</h1>
 			<h3 class="text-center"><i>Let's Design. Develop. Debug</i></h3>
 		</div>
 	</div>
@@ -97,7 +119,7 @@
 			<div class="row justify-content-evenly">
 				<div class="col-md-3 col-8"><img src="Images/c.png" class="img-fluid " height="25px" width="100%" alt="segment 1"></div>
 				<div class="col-md-7 align-self-center pt-4">
-					<h2 class="xlarge-font">An Institution, </h2>
+					<h2>An Institution, </h2>
 					<p class="">where students can find numerous computer courses to make your coding life hassle free. In recent years coding has turned up as the number-one in-demand skill, hence it became a game-changer and the ones who are skilled in it have a competitive advantage in career.  CodeHub sodepur will help the students to exceed and to acquire excellent grades as well as knowledge in coding from the very beginning of their technical career. </p>
 				</div>
 			</div>
@@ -106,7 +128,7 @@
 			<div class="row justify-content-evenly">
 				<div class="col-md-3 col-8 order-md-2 "><img src="Images/c2.png" class="img-fluid " height="25px" width="100%" alt="segment 2"></div>
 				<div class="col-md-7 align-self-center order-md-1 pt-4">
-					<h2 class="xlarge-font">We elimitate</h2>
+					<h2>We elimitate</h2>
 					<p class="">any and all technophobic circumstances to make you sturdy and well versed for working on different platforms. Here you can find classroom courses which includes school curriculum for ICSE, ISC and CBSE boards as well.</p>
 				</div>
 				
@@ -116,13 +138,14 @@
 			<div class="row justify-content-evenly">
 				<div class="col-md-3 col-8"><img src="Images/cc1.png" class="img-fluid " height="25px" width="100%" alt="segment 3"></div>
 				<div class="col-md-7 align-self-center pt-4">
-					<h2 class="xlarge-font">We offer</h2>
+					<h2>We offer</h2>
 					<p class="">to make you flawless and impeccable on different disciplines in the field of computer science, so it smooths out your technical journey. We make you versatile on various programming languages to gear up your coding skills for advancement in your career.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Counts-->
+	<!--Testimonials-->
+	
 	<!--Footer -->
 	<div class="row bg-gradient text-white justify-content-evenly pt-4" style="background-color:#061830;">
 		<div class="col-md-5 pt-3">
